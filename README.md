@@ -1,0 +1,1 @@
+Notes app using Handlebars and Expressjs for the backend

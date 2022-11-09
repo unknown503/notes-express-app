@@ -1,0 +1,24 @@
+<div class="row justify-content-center align-items-center">
+    <div class="col-xl-5 col-md-8">
+        <div class="my-3 p-3 bg-body rounded shadow-xl">
+            <h3 class="border-bottom pb-3 text-center">Login Form</h3>
+            <div class="text-muted pt-3">
+                <form method="POST" action="/users/signin" class="p-3 mb-0">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" value="test@gmail.com">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" value="123123">
+                        <label for="password">Password</label>
+                    </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Sign in</button>
+                    <div class="text-center mt-3">
+                        <p class="mb-1">Don't have an account? <a href="/users/signup">Sign-up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

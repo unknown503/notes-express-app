@@ -1,0 +1,31 @@
+<div class="row justify-content-center align-items-center">
+    <div class="col-xl-5 col-md-8">
+        <div class="my-3 p-3 bg-body rounded shadow-xl">
+            <h3 class="border-bottom pb-3 mb-0 text-center">Sign-up Form</h3>
+            <div class="text-muted pt-3">
+                <form method="POST" action="/users/signup" class="p-3 mb-0">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="{{name}}">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" value="{{email}}">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="repassword" name="repassword" placeholder="Repeat Password">
+                        <label for="repassword">Repeat Password</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Sign up</button>
+                    <div class="text-center mt-3">
+                        <p class="mb-0">Already have an account? <a href="/users/signin">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

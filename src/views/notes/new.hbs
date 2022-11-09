@@ -1,0 +1,21 @@
+<div class="row justify-content-center align-items-center">
+    <div class="col-xl-5 col-md-8">
+        <div class="my-3 p-3 bg-body rounded shadow-xl">
+            <h6 class="border-bottom pb-2 mb-0">New note</h6>
+            <div class="text-muted pt-3">
+                <form method="POST" action="/notes/new" class="p-3">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Title">
+                        <label for="title">Title</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" style="min-height:150px;" id="description" rows="8"
+                            name="description" placeholder="Description"></textarea>
+                        <label for="description">Description</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

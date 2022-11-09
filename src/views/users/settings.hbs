@@ -1,0 +1,28 @@
+<div class="row justify-content-center align-items-center">
+    <div class="col-xl-8 col-md-8">
+        <div class="my-3 p-3 bg-body rounded shadow-xl">
+            <h3 class="border-bottom pb-3 mb-0 text-center">Settings</h3>
+            <div class="text-muted pt-3">
+                <form method="POST" action="/users/settings" class="p-3 mb-0">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="{{user.name}}">
+                        <label for="name">New name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" value="{{user.email}}">
+                        <label for="email">New email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                        <label for="password">New password</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="cupassword" name="cupassword" placeholder="Current Password">
+                        <label for="cupassword">Current Password</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
